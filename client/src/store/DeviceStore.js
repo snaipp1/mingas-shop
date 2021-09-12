@@ -4,7 +4,9 @@ export default class DeviceStore {
   constructor() {
     this._types = [
         {id: 1, name: 'Плита газовая'},
-        {id: 2, name: 'Колонка газовая'}
+        {id: 2, name: 'Колонка газовая'},
+        {id: 3, name: 'Счетчик расхода газа'},
+        {id: 4, name: 'Котел газовый'},
     ];
     this._brands = [
         {id: 1, name: "Gefest"},
@@ -16,6 +18,7 @@ export default class DeviceStore {
         {id: 3, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
         {id: 4, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
     ];
+    this._selectedType = {};
     makeAutoObservable(this);
   }
 
@@ -31,6 +34,9 @@ export default class DeviceStore {
     this._devices = devices;
   }
 
+  setSelectedType(type) {
+    this._selectedType = type;
+  }
 
   get types() {
       return this._types;
@@ -42,6 +48,10 @@ export default class DeviceStore {
 
   get devices() {
       return this._devices;
+  }
+
+  get selectedType() {
+    return this._selectedType;
   }
 
 };
