@@ -17,6 +17,12 @@ export default class DeviceStore {
         {id: 2, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
         {id: 3, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
         {id: 4, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
+        {id: 5, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
+        {id: 6, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
+        {id: 7, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
+        {id: 8, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
+        {id: 9, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
+        {id: 10, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
     ];
     this._selectedType = {};
     this._selectedBrand = {};
