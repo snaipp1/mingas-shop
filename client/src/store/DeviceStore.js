@@ -19,6 +19,8 @@ export default class DeviceStore {
         {id: 4, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
     ];
     this._selectedType = {};
+    this._selectedBrand = {};
+
     makeAutoObservable(this);
   }
 
@@ -38,6 +40,10 @@ export default class DeviceStore {
     this._selectedType = type;
   }
 
+  setSelectedBrand(brand) {
+    this._selectedBrand = brand;
+  }
+
   get types() {
       return this._types;
   }
@@ -52,6 +58,10 @@ export default class DeviceStore {
 
   get selectedType() {
     return this._selectedType;
+  }
+
+  get selectedBrand() {
+    return this._selectedBrand;
   }
 
 };
