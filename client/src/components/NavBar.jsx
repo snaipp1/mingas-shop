@@ -13,6 +13,12 @@ import { useHistory } from 'react-router-dom';
 const NavBar = observer(() => {
     const {user} = useContext(Context);
     const history = useHistory();
+
+    const logOut = () => {
+        user.setUser({});
+        user.setIsAuth(false);
+    }
+
     return (
         <Navbar bg="dark" variant="dark">
             <Container>
@@ -27,7 +33,7 @@ const NavBar = observer(() => {
                         </Button>
                         <Button 
                             variant={"outline-light"} 
-                            onClick={() => history.push(LOGIN_ROUTE)} 
+                            onClick={() => logOut()} 
                             style={{marginLeft: '5px'}}
                         >
                             Выйти
@@ -35,7 +41,7 @@ const NavBar = observer(() => {
                     </Nav>
                     :
                      <Nav className="ml-auto" style={{color: "#fff"}}>
-                        <Button variant={"outline-light"} onClick={() => user.setIsAuth(true)}>Авторизация</Button>
+                        <Button variant={"outline-light"} onClick={() => history.push(LOGIN_ROUTE)}>Авторизация</Button>
                     </Nav>
                 }
             </Container>
