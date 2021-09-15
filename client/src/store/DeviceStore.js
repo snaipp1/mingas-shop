@@ -2,28 +2,9 @@ import {makeAutoObservable} from 'mobx';
 
 export default class DeviceStore {
   constructor() {
-    this._types = [
-        {id: 1, name: 'Плита газовая'},
-        {id: 2, name: 'Колонка газовая'},
-        {id: 3, name: 'Счетчик расхода газа'},
-        {id: 4, name: 'Котел газовый'},
-    ];
-    this._brands = [
-        {id: 1, name: "Gefest"},
-        {id: 2, name: "Bosh"},
-    ];
-    this._devices = [
-        {id: 1, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-        {id: 2, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-        {id: 3, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-        {id: 4, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-        {id: 5, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-        {id: 6, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-        {id: 7, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-        {id: 8, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-        {id: 9, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-        {id: 10, name: "PG123", price: 355, rating: 5, img: 'https://trudogolik24.ru/pic/tov/oreon/201807312357539758.jpg'},
-    ];
+    this._types = [];
+    this._brands = [];
+    this._devices = [];
     this._selectedType = {};
     this._selectedBrand = {};
 
